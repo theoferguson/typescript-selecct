@@ -1,10 +1,10 @@
-export type SelectOptions = {
+export type SelectOption = {
     label: string
-    value: string
+    value: string | number
 }
 
 export type SelectProps = {
-    options: SelectOptions[]
-    value?: SelectOptions
-    onChange: (value: SelectOptions | undefined) => void 
+    options: SelectOption[]
+    value?: SelectOption
+    onChange: (value: SelectOption | undefined) => void 
 }
